@@ -7,7 +7,15 @@ on:
   push: {branches: ["main"]}
 
 jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DUMMY 
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }}
 
+      
+  
   achievements:
     runs-on: ubuntu-latest
     steps:
